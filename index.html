@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 9-11</title>
+  </head>
+  <body>
+    <script>
+        // ---------------------1-----------------
+      var cityName = prompt("Enter your city name");
+      if(cityName=="Karachi"){
+      alert("Welcome to the city of lights")}
+       else{alert("Welcome")}
+
+
+    //   ------------------2--------------------
+       var gender = prompt("Your gender?");
+       if(gender=="male"){
+       alert("Good Morning Sir")
+       }else if(gender=="female"){
+     alert("Good Morning Ma'am");
+     }
+
+
+    //   --------------3-------------
+      var color = prompt("Enter color of traffic signal");
+      if(color=="red"){
+      alert("Must stop");
+      }else if(color=="yellow"){
+      alert("Ready to move")
+      }else if(color=="green"){
+      alert("Move now");
+      }
+
+
+    //   ----------------4---------------------
+      var remainingFuel = prompt("How much fuel is remaining in your car");
+      if(remainingFuel<"0.75 litres"){
+      alert("Please refill the fuel in your car")
+
+      }else{
+      alert("You have enough fuel to reach your destination")
+      }
+
+
+    //   ------------------5-------------------
+      document.write(`<h2>Mark Sheet</h2>`);
+      var totalMarks = prompt("Enter total marks");
+      var obtainedMarks = prompt(
+        "Enter your obtained marks in three  subjects"
+      );
+      var percentage = (obtainedMarks / totalMarks) * 100;
+      document.write(`Total Marks: ${totalMarks} </br> Obtained Marks: ${obtainedMarks} </br> Percentage:
+            ${percentage}%  </br>`);
+
+      if (percentage >= 80) {
+        document.write(`Grade: A-one </br> Rrmarks: Excellent`);
+      } else if (percentage >= 70) {
+        document.write(`Grade: A </br> Rrmarks: Good`);
+      } else if (percentage >= 60) {
+        document.write(`Grade: B </br> Rrmarks: You need to improve`);
+      } else {
+        document.write(`Grade: Fail </br> Remarks: Sorry`);
+      }
+
+
+    // ----------------6----------------
+    let number = 3;
+    let secretNo= prompt("Guess the secret number");
+    if(number==secretNo){
+        console.log("Bingo! Correct Answer");
+    }else if(secretNo== ++number){
+        console.log("Close enough to the correct answer");
+    }else{
+        console.log("Wrong answer")
+    }
+
+
+
+// -------------------------7------------------------
+    let no= prompt("Enter number to check");
+        if(no % 3==0){
+            alert("This number is divisible by 3")
+        } else{
+            alert("This number is not divisible by 3")
+        }
+
+
+        // ---------------------8-----------------------
+        let userInput = prompt("Enter the number you want to check whether it is even or odd");
+        if(userInput % 2 ===0){
+            alert("This is even number")
+        } else{
+            alert("This number is odd")
+        }
+    
+// ------------------------------9------------------------
+    let temperature= prompt("Current Temperature?");
+    if(temperature>40){
+        console.log("It is too hot outside")
+    }else if(temperature>30){
+        console.log("The Weather today is Normal")
+    }else if(temperature>20){
+        console.log("Today’s Weather is cool")
+    }else if(temperature>10){
+        console.log("OMG! Today’s weather is so Cool")
+    }
+
+
+    // --------------------10---------------------
+   let firstNumber= +prompt("Entter first no");
+   let secondNumber = +prompt("Enter second number");
+   let operation= prompt("Which operation you want to perform?");
+   if(operation=="add"){
+    console.log(firstNumber+secondNumber)
+   }else if(operation=="subtract"){
+    console.log(firstNumber-secondNumber)
+   }else if(operation=="multiply"){
+    console.log(firstNumber*secondNumber)
+   }else if(operation=="divission"){
+    console.log(firstNumber/secondNumber)
+   }else if(operation=="modulus"){
+    console.log(firstNumber%secondNumber)
+   }
+   
+    </script>
+  </body>
+</html>
